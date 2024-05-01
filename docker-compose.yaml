@@ -2,8 +2,8 @@ services:
   flarum:
     image: mondedie/flarum:stable
     container_name: flarum
-    env_file:
-      - ./flarum.env
+#    env_file:
+#      - ./flarum.env
     volumes:
       - ./assets:/flarum/app/public/assets
       - ./extensions:/flarum/app/extensions
@@ -16,7 +16,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.flarum.rule=Host(`flarum.hostbeaver.ru`)"
-      - "traefik.http.services.flarum.loadbalancer.server.port=8888"
+#      - "traefik.http.services.flarum.loadbalancer.server.port=80"
 
   mariadb:
     image: mariadb:10.5
