@@ -26,7 +26,6 @@ services:
       - MYSQL_PASSWORD=36gucoj1
     volumes:
       - /home/admin/db/flarum/mysql/:/var/lib/mysql
-
 networks:
   proxynet:
     external: true
