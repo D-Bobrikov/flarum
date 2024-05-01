@@ -14,7 +14,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.flarum.rule=Host(`flarum.hostbeaver.ru`)"
-      - "traefik.http.services.flarum.loadbalancer.server.port=443"
+#      - "traefik.http.services.flarum.loadbalancer.server.port=443"
 
   mariadb:
     image: mariadb:10.5
