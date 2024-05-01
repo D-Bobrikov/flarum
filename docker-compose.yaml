@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   flarum:
     image: mondedie/flarum:stable
