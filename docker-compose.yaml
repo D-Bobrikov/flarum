@@ -16,7 +16,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.lara_nginx.rule=Host(`flarum.hostbeaver.ru`)"
-      - "traefik.http.services.lara_nginx.loadbalancer.server.port=8888"
+      - "traefik.http.services.lara_nginx.loadbalancer.server.port=80"
 
   mariadb:
     image: mariadb:10.5
