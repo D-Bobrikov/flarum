@@ -13,10 +13,10 @@ services:
       - 80:8888
     depends_on:
       - mariadb
-#    labels:
-#      - "traefik.enable=true"
-#      - "traefik.http.routers.flarum.rule=Host(`flarum.hostbeaver.ru`)"
-#      - "traefik.http.services.flarum.loadbalancer.server.port=80"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.flarum.rule=Host(`flarum.hostbeaver.ru`)"
+      - "traefik.http.services.flarum.loadbalancer.server.port=8888"
 
   mariadb:
     image: mariadb:10.5
@@ -29,6 +29,6 @@ services:
     volumes:
       - /home/admin/db/flarum/mysql/:/var/lib/mysql
 
-#networks:
-#  proxynet:
-#    external: true
+networks:
+  proxynet:
+    external: true
