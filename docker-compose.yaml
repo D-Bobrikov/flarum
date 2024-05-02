@@ -1,6 +1,6 @@
 services:
   flarum:
-    image: mondedie/flarum:stable
+    image: mondedie/flarum:latest
     container_name: flarum
     env_file:
       - ./flarum.env
