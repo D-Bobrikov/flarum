@@ -8,7 +8,6 @@ services:
       - ./assets:/flarum/app/public/assets
       - ./extensions:/flarum/app/extensions
       - ./storage/logs:/flarum/app/storage/logs
-      - ./flarum:/flarum
       - ./nginx:/etc/nginx/flarum
     ports:
       - 80:8888
