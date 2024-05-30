@@ -1,4 +1,5 @@
 FROM mondedie/flarum:latest
 WORKDIR "/flarum/app/"
 
-RUN composer update
+RUN composer doctrine/dbal \
+composer update
