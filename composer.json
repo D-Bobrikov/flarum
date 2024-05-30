@@ -26,6 +26,7 @@
     "flarum/bbcode": "*",
     "flarum/emoji": "*",
     "flarum/lang-english": "*",
+    "flarum-lang/russian": "*",
     "flarum/flags": "*",
     "flarum/likes": "*",
     "flarum/lock": "*",
@@ -38,7 +39,7 @@
     "flarum/subscriptions": "*",
     "flarum/suspend": "*",
     "flarum/tags": "*",
-    "flarum-lang/russian": "*"
+    "doctrine/dbal": "*"
   },
   "config": {
     "preferred-install": "dist",
