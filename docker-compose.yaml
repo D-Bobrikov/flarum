@@ -1,8 +1,8 @@
 services:
   flarum:
     build: docker
-    working_dir: /flarum/app/
     container_name: flarum
+    restart: unless-stopped
     env_file:
       - ./flarum.env
     volumes:
