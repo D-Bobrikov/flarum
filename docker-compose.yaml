@@ -10,9 +10,8 @@ services:
       - ./storage/logs:/flarum/app/storage/logs
       - ./nginx:/etc/nginx/flarum
       - ./composer.json:/flarum/app/composer.json
-    working_dir: flarum/app/
-    command:
-      - 'composer update'
+    working_dir: /flarum/app/
+    command: 'composer update'
     ports:
       - 80:8888
     depends_on:
