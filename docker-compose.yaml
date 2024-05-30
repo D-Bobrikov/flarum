@@ -1,6 +1,6 @@
 services:
   flarum:
-    image: mondedie/flarum:latest
+    build: /docker
     container_name: flarum
     env_file:
       - ./flarum.env
@@ -10,7 +10,6 @@ services:
       - ./storage/logs:/flarum/app/storage/logs
       - ./nginx:/etc/nginx/flarum
       - ./composer.json:/flarum/app/composer.json
-    working_dir: /flarum/app/
     ports:
       - 80:8888
     depends_on:
