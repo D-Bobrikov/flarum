@@ -1,6 +1,6 @@
 services:
   flarum:
-    build: /docker
+    build: docker
     container_name: flarum
     env_file:
       - ./flarum.env
