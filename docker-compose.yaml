@@ -2,7 +2,6 @@ services:
   flarum:
     image: mondedie/flarum:latest
     container_name: flarum
-    entrypoint: /bin/sh -c "cd flarum/app/ && composer update"
     env_file:
       - ./flarum.env
     volumes:
@@ -11,6 +10,9 @@ services:
       - ./storage/logs:/flarum/app/storage/logs
       - ./nginx:/etc/nginx/flarum
       - ./composer.json:/flarum/app/composer.json
+    working_dir: flarum/app/
+    command:
+      - 'composer update'
     ports:
       - 80:8888
     depends_on:
