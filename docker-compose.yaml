@@ -2,7 +2,7 @@ services:
   flarum:
     image: mondedie/flarum:latest
     container_name: flarum
-#    command: sh -c "cd flarum/app/ && composer update"
+    command: sh -c "cd flarum/app/ && composer update"
     env_file:
       - ./flarum.env
     volumes:
