@@ -1,4 +1,4 @@
 FROM mondedie/flarum:latest
 WORKDIR "/flarum/app/"
 
-RUN composer install
+RUN composer update
