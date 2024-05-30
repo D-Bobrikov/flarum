@@ -38,8 +38,7 @@
     "flarum/sticky": "*",
     "flarum/subscriptions": "*",
     "flarum/suspend": "*",
-    "flarum/tags": "*",
-    "doctrine/dbal": "*"
+    "flarum/tags": "*"
   },
   "config": {
     "preferred-install": "dist",
